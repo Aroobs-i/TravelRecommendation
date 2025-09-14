@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <input type="text" id="searchInput" placeholder="Search recommendations...">
+    <button onclick="searchRecommendation()">Search</button>
+    <button onclick="clearResults()">Reset</button>
+  </nav>
+
+  <!-- Main content (changes per page) -->
+  <div id="content">
+  <img src="/images/bg.jpeg">
+    <!-- Home, About, Contact will load here -->
+  </div>
+
+  <div id="results"></div>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>

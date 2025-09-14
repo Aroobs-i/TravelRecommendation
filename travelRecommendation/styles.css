@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+    background: #333;
+    padding: 10px;
+  }
+  
+  .navbar a, .navbar button, .navbar input {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+  }
+  
+  .home {
+    text-align: center;
+    padding: 50px;
+    color: white;
+    background-size: cover;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    margin: 10px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    width: 250px;
+  }
+  
+  #content {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* blurred background */
+  #content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/images/bg.jpeg") no-repeat center center/cover;
+    filter: blur(8px);
+    transform: scale(1.1); /* prevents edges showing when blurred */
+    z-index: -1;
+  }
+  
